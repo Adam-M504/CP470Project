@@ -1,0 +1,9 @@
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dateText"
+    android:layout_width="60dp"
+    android:layout_height="60dp"
+    android:gravity="center"
+    android:text="9"
+    android:textSize="18sp"
+    android:background="@drawable/date_item_bg"
+    android:layout_margin="4dp" />
