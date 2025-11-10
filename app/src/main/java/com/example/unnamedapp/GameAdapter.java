@@ -1,6 +1,7 @@
 // GameAdapter.java
 package com.example.unnamedapp;
 
+import android.content.Intent;
 import android.view.*;
 import android.widget.*;
 import androidx.recyclerview.widget.RecyclerView;
@@ -40,9 +41,10 @@ public class GameAdapter extends RecyclerView.Adapter<GameAdapter.ViewHolder> {
         holder.time.setText("Time: " + g.time);
         holder.location.setText("Location: " + g.location);
 
-        holder.signUp.setOnClickListener(v ->
-                Toast.makeText(v.getContext(), "Signed up for " + g.name, Toast.LENGTH_SHORT).show()
-        );
+        holder.signUp.setOnClickListener(v -> {
+            Toast.makeText(v.getContext(), "Signed up for " + g.name, Toast.LENGTH_SHORT).show();
+            HomePage.CallGameInfo(g.name, v.getContext());
+        });
     }
 
     @Override

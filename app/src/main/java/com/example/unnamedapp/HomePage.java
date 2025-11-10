@@ -1,6 +1,7 @@
 package com.example.unnamedapp;
 
 import android.content.ContentValues;
+import android.content.Context;
 import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
@@ -122,6 +123,13 @@ public class HomePage extends AppCompatActivity {
         gameAdapter = new GameAdapter(games);
         gameRecyclerView.setLayoutManager(new LinearLayoutManager(this));
         gameRecyclerView.setAdapter(gameAdapter);
+    }
+
+    public static void CallGameInfo(String selected_game_id, Context ctx){
+        Intent intent = new Intent(ctx, GameInfoActivity.class);
+        intent.putExtra("Game_id", selected_game_id);
+        ctx.startActivity(intent);
+
     }
 
     @Override
