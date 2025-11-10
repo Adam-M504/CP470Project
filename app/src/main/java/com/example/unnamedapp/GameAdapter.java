@@ -21,6 +21,7 @@ public class GameAdapter extends RecyclerView.Adapter<GameAdapter.ViewHolder> {
             name = v.findViewById(R.id.gameName);
             time = v.findViewById(R.id.gameTime);
             location = v.findViewById(R.id.gameLocation);
+
             signUp = v.findViewById(R.id.btnSignUp);
         }
     }

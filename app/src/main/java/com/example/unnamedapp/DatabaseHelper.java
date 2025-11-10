@@ -8,7 +8,7 @@ import android.util.Log;
 public class DatabaseHelper extends SQLiteOpenHelper{
 
     private static final String DATABASE_NAME = "Soccer.db";
-    private static final int VERSION_NUM = 1;
+    private static final int VERSION_NUM = 4;
 
 
     public static final String TABLE_NAME_PLAYER = "Table_Player";

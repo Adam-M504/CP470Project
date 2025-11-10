@@ -27,6 +27,7 @@
         android:layout_height="wrap_content"
         android:text="Location: Field 1" />
 
+
     <Button
         android:id="@+id/btnSignUp"
         android:layout_width="wrap_content"

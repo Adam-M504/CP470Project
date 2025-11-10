@@ -1,6 +1,7 @@
 package com.example.unnamedapp;
 
 import android.content.ContentValues;
+import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
@@ -18,16 +19,22 @@ import com.example.unnamedapp.Game;
 import com.example.unnamedapp.GameAdapter;
 
 
+import java.time.LocalDate;
 import java.util.*;
 
 public class HomePage extends AppCompatActivity {
 
     RecyclerView dateRecyclerView, gameRecyclerView;
     DateAdapter dateAdapter;
+
     GameAdapter gameAdapter;
     DatabaseHelper myhelper;
     SQLiteDatabase db;
     ImageButton Trophy_button;
+
+    LocalDate todays_date = LocalDate.now();
+
+    String selected_date = todays_date.toString();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,10 +45,18 @@ public class HomePage extends AppCompatActivity {
         gameRecyclerView = findViewById(R.id.gameRecyclerView);
 
         // horizontal date list
-        List<String> dates = Arrays.asList("8", "9", "10", "11", "12");
+//        todays_date = LocalDate.now(); // todays date object created
+        List<String> dates = Arrays.asList(todays_date.toString(), (todays_date.plusDays(1)).toString(), (todays_date.plusDays(2)).toString(), (todays_date.plusDays(3)).toString(),
+                (todays_date.plusDays(4)).toString(), (todays_date.plusDays(5)).toString(), (todays_date.plusDays(6)).toString(), (todays_date.plusDays(7)).toString());
         dateAdapter = new DateAdapter(dates, selectedDate -> {
             Toast.makeText(this, "Selected date: " + selectedDate, Toast.LENGTH_SHORT).show();
-            // TODO: query SQL Table_Game to update game list for this date
+            // change selected date to selectedDate, refresh the page
+            selected_date = selectedDate;
+            Log.i("HomePage", "New date selected: "+selected_date);
+            // start home page
+            CreateGameList();
+            //Intent intent = new Intent(HomePage.this, HomePage.class);
+            //startActivity(intent);
         });
         dateRecyclerView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
         dateRecyclerView.setAdapter(dateAdapter);
@@ -51,11 +66,14 @@ public class HomePage extends AppCompatActivity {
         myhelper = new DatabaseHelper(this);
         db = myhelper.getWritableDatabase();
 
+
+
         Trophy_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Log.i("HomePage", "New date selected: "+selected_date);
                 ContentValues values = new ContentValues();
-                values.put(DatabaseHelper.KEY_G_DATE, "November 9th");
+                values.put(DatabaseHelper.KEY_G_DATE, selected_date);
                 values.put(DatabaseHelper.KEY_G_LOCATION, "Field 1");
                 values.put(DatabaseHelper.KEY_G_TIME, "6PM");
                 values.put(DatabaseHelper.KEY_G_T1, "1");
@@ -68,11 +86,17 @@ public class HomePage extends AppCompatActivity {
             }
         });
 
+        CreateGameList();
+
+    }
+
+    public void CreateGameList(){
         // game list
         List<Game> games = new ArrayList<>();
 
         String get_game_values = "SELECT "+DatabaseHelper.KEY_G_ID +", "+DatabaseHelper.KEY_G_TIME+", "
-                +DatabaseHelper.KEY_G_LOCATION+" FROM " + DatabaseHelper.TABLE_NAME_GAME;
+                +DatabaseHelper.KEY_G_LOCATION+", "+DatabaseHelper.KEY_G_DATE+" FROM " + DatabaseHelper.TABLE_NAME_GAME
+                + " WHERE "+ DatabaseHelper.KEY_G_DATE + " = " + "'"+selected_date+"'";
 
         Cursor cursor = db.rawQuery(get_game_values, null);
 
@@ -82,7 +106,8 @@ public class HomePage extends AppCompatActivity {
             String games_id = cursor.getString(cursor.getColumnIndexOrThrow(DatabaseHelper.KEY_G_ID));
             String games_time = cursor.getString(cursor.getColumnIndexOrThrow(DatabaseHelper.KEY_G_TIME));
             String games_location = cursor.getString(cursor.getColumnIndexOrThrow(DatabaseHelper.KEY_G_LOCATION));
-            games.add(new Game(games_id, games_time,games_location));
+            String games_date = cursor.getString(cursor.getColumnIndexOrThrow(DatabaseHelper.KEY_G_DATE));
+            games.add(new Game(games_id, games_time,games_location, games_date));
 
             cursor.moveToNext();
         }
@@ -98,7 +123,6 @@ public class HomePage extends AppCompatActivity {
         gameRecyclerView.setLayoutManager(new LinearLayoutManager(this));
         gameRecyclerView.setAdapter(gameAdapter);
     }
-
 
     @Override
     protected void onDestroy(){
