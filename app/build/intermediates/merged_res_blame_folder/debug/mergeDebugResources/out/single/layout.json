@@ -1,0 +1,42 @@
+[
+    {
+        "merged": "com.example.unnamedapp-mergeDebugResources-45:/layout/activity_friend_page.xml",
+        "source": "com.example.unnamedapp-main-48:/layout/activity_friend_page.xml"
+    },
+    {
+        "merged": "C:\\Users\\Michael\\.gradle\\daemon\\8.13\\com.example.unnamedapp-mergeDebugResources-45:\\layout\\item_game.xml",
+        "source": "C:\\Users\\Michael\\.gradle\\daemon\\8.13\\com.example.unnamedapp-main-48:\\layout\\item_game.xml"
+    },
+    {
+        "merged": "com.example.unnamedapp-mergeDebugResources-45:/layout/activity_friend_search.xml",
+        "source": "com.example.unnamedapp-main-48:/layout/activity_friend_search.xml"
+    },
+    {
+        "merged": "C:\\Users\\Michael\\.gradle\\daemon\\8.13\\com.example.unnamedapp-mergeDebugResources-45:\\layout\\activity_home_page.xml",
+        "source": "C:\\Users\\Michael\\.gradle\\daemon\\8.13\\com.example.unnamedapp-main-48:\\layout\\activity_home_page.xml"
+    },
+    {
+        "merged": "com.example.unnamedapp-mergeDebugResources-45:/layout/activity_home_page.xml",
+        "source": "com.example.unnamedapp-main-48:/layout/activity_home_page.xml"
+    },
+    {
+        "merged": "C:\\Users\\Michael\\.gradle\\daemon\\8.13\\com.example.unnamedapp-mergeDebugResources-45:\\layout\\item_date.xml",
+        "source": "C:\\Users\\Michael\\.gradle\\daemon\\8.13\\com.example.unnamedapp-main-48:\\layout\\item_date.xml"
+    },
+    {
+        "merged": "C:\\Users\\Michael\\.gradle\\daemon\\8.13\\com.example.unnamedapp-mergeDebugResources-45:\\layout\\activity_game_history.xml",
+        "source": "C:\\Users\\Michael\\.gradle\\daemon\\8.13\\com.example.unnamedapp-main-48:\\layout\\activity_game_history.xml"
+    },
+    {
+        "merged": "C:\\Users\\Michael\\.gradle\\daemon\\8.13\\com.example.unnamedapp-mergeDebugResources-45:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\Michael\\.gradle\\daemon\\8.13\\com.example.unnamedapp-main-48:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "com.example.unnamedapp-mergeDebugResources-45:/layout/item_friend_search.xml",
+        "source": "com.example.unnamedapp-main-48:/layout/item_friend_search.xml"
+    },
+    {
+        "merged": "C:\\Users\\Michael\\.gradle\\daemon\\8.13\\com.example.unnamedapp-mergeDebugResources-45:\\layout\\activity_login.xml",
+        "source": "C:\\Users\\Michael\\.gradle\\daemon\\8.13\\com.example.unnamedapp-main-48:\\layout\\activity_login.xml"
+    }
+]

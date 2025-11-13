@@ -14,9 +14,6 @@
 
         <!-- Your existing activities -->
         <activity
-            android:name=".MainActivity"
-            android:exported="false" />
-        <activity
             android:name=".HomePage"
             android:exported="true">
             <intent-filter>
