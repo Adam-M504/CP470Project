@@ -11,18 +11,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.UnnamedApp">
-        <activity
-            android:name=".MainActivity"
-            android:exported="false" />
+
+        <!-- Your existing activities -->
         <activity
             android:name=".HomePage"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- ADD THESE TWO LINES BELOW -->
+        <activity android:name=".FriendSearchActivity" android:exported="false" />
+        <activity android:name=".FriendPageActivity" android:exported="false" />
     </application>
+
 
 </manifest>
