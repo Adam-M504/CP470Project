@@ -97,7 +97,7 @@ public class HomePage extends AppCompatActivity {
             }
         });
 
-
+// test
         CreateGameList();
 
     }
