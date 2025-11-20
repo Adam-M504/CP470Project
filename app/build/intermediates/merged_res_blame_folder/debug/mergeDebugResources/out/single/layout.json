@@ -1,42 +1,46 @@
 [
     {
-        "merged": "com.example.unnamedapp-mergeDebugResources-45:/layout/activity_friend_page.xml",
-        "source": "com.example.unnamedapp-main-48:/layout/activity_friend_page.xml"
+        "merged": "/Users/adammoor/.gradle/daemon/8.13/com.example.unnamedapp-mergeDebugResources-45:/layout/create_game_page.xml",
+        "source": "/Users/adammoor/.gradle/daemon/8.13/com.example.unnamedapp-main-48:/layout/create_game_page.xml"
     },
     {
-        "merged": "C:\\Users\\Michael\\.gradle\\daemon\\8.13\\com.example.unnamedapp-mergeDebugResources-45:\\layout\\item_game.xml",
-        "source": "C:\\Users\\Michael\\.gradle\\daemon\\8.13\\com.example.unnamedapp-main-48:\\layout\\item_game.xml"
+        "merged": "/Users/adammoor/.gradle/daemon/8.13/com.example.unnamedapp-mergeDebugResources-45:/layout/item_date.xml",
+        "source": "/Users/adammoor/.gradle/daemon/8.13/com.example.unnamedapp-main-48:/layout/item_date.xml"
     },
     {
-        "merged": "com.example.unnamedapp-mergeDebugResources-45:/layout/activity_friend_search.xml",
-        "source": "com.example.unnamedapp-main-48:/layout/activity_friend_search.xml"
+        "merged": "/Users/adammoor/.gradle/daemon/8.13/com.example.unnamedapp-mergeDebugResources-45:/layout/activity_friend_page.xml",
+        "source": "/Users/adammoor/.gradle/daemon/8.13/com.example.unnamedapp-main-48:/layout/activity_friend_page.xml"
     },
     {
-        "merged": "C:\\Users\\Michael\\.gradle\\daemon\\8.13\\com.example.unnamedapp-mergeDebugResources-45:\\layout\\activity_home_page.xml",
-        "source": "C:\\Users\\Michael\\.gradle\\daemon\\8.13\\com.example.unnamedapp-main-48:\\layout\\activity_home_page.xml"
+        "merged": "/Users/adammoor/.gradle/daemon/8.13/com.example.unnamedapp-mergeDebugResources-45:/layout/item_friend_search.xml",
+        "source": "/Users/adammoor/.gradle/daemon/8.13/com.example.unnamedapp-main-48:/layout/item_friend_search.xml"
+    },
+    {
+        "merged": "/Users/adammoor/.gradle/daemon/8.13/com.example.unnamedapp-mergeDebugResources-45:/layout/activity_forgot_password.xml",
+        "source": "/Users/adammoor/.gradle/daemon/8.13/com.example.unnamedapp-main-48:/layout/activity_forgot_password.xml"
     },
     {
         "merged": "com.example.unnamedapp-mergeDebugResources-45:/layout/activity_home_page.xml",
         "source": "com.example.unnamedapp-main-48:/layout/activity_home_page.xml"
     },
     {
-        "merged": "C:\\Users\\Michael\\.gradle\\daemon\\8.13\\com.example.unnamedapp-mergeDebugResources-45:\\layout\\item_date.xml",
-        "source": "C:\\Users\\Michael\\.gradle\\daemon\\8.13\\com.example.unnamedapp-main-48:\\layout\\item_date.xml"
+        "merged": "/Users/adammoor/.gradle/daemon/8.13/com.example.unnamedapp-mergeDebugResources-45:/layout/activity_login.xml",
+        "source": "/Users/adammoor/.gradle/daemon/8.13/com.example.unnamedapp-main-48:/layout/activity_login.xml"
     },
     {
-        "merged": "C:\\Users\\Michael\\.gradle\\daemon\\8.13\\com.example.unnamedapp-mergeDebugResources-45:\\layout\\activity_game_history.xml",
-        "source": "C:\\Users\\Michael\\.gradle\\daemon\\8.13\\com.example.unnamedapp-main-48:\\layout\\activity_game_history.xml"
+        "merged": "/Users/adammoor/.gradle/daemon/8.13/com.example.unnamedapp-mergeDebugResources-45:/layout/activity_friend_search.xml",
+        "source": "/Users/adammoor/.gradle/daemon/8.13/com.example.unnamedapp-main-48:/layout/activity_friend_search.xml"
     },
     {
-        "merged": "C:\\Users\\Michael\\.gradle\\daemon\\8.13\\com.example.unnamedapp-mergeDebugResources-45:\\layout\\activity_main.xml",
-        "source": "C:\\Users\\Michael\\.gradle\\daemon\\8.13\\com.example.unnamedapp-main-48:\\layout\\activity_main.xml"
+        "merged": "/Users/adammoor/.gradle/daemon/8.13/com.example.unnamedapp-mergeDebugResources-45:/layout/activity_create_account.xml",
+        "source": "/Users/adammoor/.gradle/daemon/8.13/com.example.unnamedapp-main-48:/layout/activity_create_account.xml"
     },
     {
-        "merged": "com.example.unnamedapp-mergeDebugResources-45:/layout/item_friend_search.xml",
-        "source": "com.example.unnamedapp-main-48:/layout/item_friend_search.xml"
+        "merged": "/Users/adammoor/.gradle/daemon/8.13/com.example.unnamedapp-mergeDebugResources-45:/layout/activity_home_page.xml",
+        "source": "/Users/adammoor/.gradle/daemon/8.13/com.example.unnamedapp-main-48:/layout/activity_home_page.xml"
     },
     {
-        "merged": "C:\\Users\\Michael\\.gradle\\daemon\\8.13\\com.example.unnamedapp-mergeDebugResources-45:\\layout\\activity_login.xml",
-        "source": "C:\\Users\\Michael\\.gradle\\daemon\\8.13\\com.example.unnamedapp-main-48:\\layout\\activity_login.xml"
+        "merged": "/Users/adammoor/.gradle/daemon/8.13/com.example.unnamedapp-mergeDebugResources-45:/layout/item_game.xml",
+        "source": "/Users/adammoor/.gradle/daemon/8.13/com.example.unnamedapp-main-48:/layout/item_game.xml"
     }
 ]

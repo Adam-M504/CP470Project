@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#FFFFFF">
+    android:background="@drawable/home_page_background">
 
     <!-- Header -->
     <LinearLayout
@@ -12,7 +12,9 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:padding="16dp"
-        android:gravity="center_vertical|center|bottom">
+        android:gravity="center_vertical|center|bottom"
+        android:background="#999999"
+        android:elevation="4dp">
 
         <TextView
             android:id="@+id/homeTitle"
@@ -54,7 +56,7 @@
         android:layout_height="60dp"
         android:orientation="horizontal"
         android:gravity="center"
-        android:background="#EEEEEE">
+        android:background="#999999">
 
         <ImageButton
             android:id="@+id/navFriends"

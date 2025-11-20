@@ -27,19 +27,24 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/Theme.UnnamedApp" >
-
-        <!-- Your existing activities -->
+        <activity
+            android:name="com.example.unnamedapp.CreateAccountActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.unnamedapp.ForgotPasswordActivity"
+            android:exported="false" /> <!-- Your existing activities -->
         <activity
             android:name="com.example.unnamedapp.HomePage"
+            android:exported="true" />
+        <activity
+            android:name="com.example.unnamedapp.LoginActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-
-        <!-- ADD THESE TWO LINES BELOW -->
+        </activity> <!-- ADD THESE TWO LINES BELOW -->
         <activity
             android:name="com.example.unnamedapp.FriendSearchActivity"
             android:exported="false" />
