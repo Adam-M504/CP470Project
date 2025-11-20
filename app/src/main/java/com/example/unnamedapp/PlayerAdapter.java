@@ -1,4 +1,3 @@
-// PlayerAdapter.java
 package com.example.unnamedapp;
 
 import android.view.LayoutInflater;

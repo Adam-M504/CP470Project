@@ -32,6 +32,7 @@ public class HomePage extends AppCompatActivity {
     DatabaseHelper myhelper;
     SQLiteDatabase db;
     ImageButton Trophy_button;
+    ImageButton Friend_button;
 
     LocalDate todays_date = LocalDate.now();
 
@@ -67,7 +68,13 @@ public class HomePage extends AppCompatActivity {
         myhelper = new DatabaseHelper(this);
         db = myhelper.getWritableDatabase();
 
-
+        Cursor c = db.rawQuery("PRAGMA table_info(" + DatabaseHelper.TABLE_NAME_GAME + ")", null);
+        while (c.moveToNext()) {
+            Log.e("DB_SCHEMA",
+                    "col=" + c.getString(1) + " type=" + c.getString(2)
+            );
+        }
+        c.close();
 
         Trophy_button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -87,6 +94,17 @@ public class HomePage extends AppCompatActivity {
             }
         });
 
+        Friend_button = findViewById(R.id.navFriends);
+        Friend_button.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Log.i("HomePage", "Friend Page selected");
+                Intent intent = new Intent(HomePage.this, FriendSearchActivity.class);
+                startActivity(intent);
+            }
+        });
+
+// test
         CreateGameList();
 
     }
@@ -126,6 +144,7 @@ public class HomePage extends AppCompatActivity {
     }
 
     public static void CallGameInfo(String selected_game_id, Context ctx){
+
         Intent intent = new Intent(ctx, GameInfoActivity.class);
         intent.putExtra("Game_id", selected_game_id);
         ctx.startActivity(intent);

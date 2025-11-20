@@ -1,4 +1,3 @@
-// Player.java
 package com.example.unnamedapp;
 
 public class Player {
@@ -12,4 +11,3 @@ public class Player {
         this.gender = gender;
     }
 }
-

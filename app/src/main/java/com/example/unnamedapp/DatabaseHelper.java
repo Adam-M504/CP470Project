@@ -8,7 +8,7 @@ import android.util.Log;
 public class DatabaseHelper extends SQLiteOpenHelper{
 
     private static final String DATABASE_NAME = "Soccer.db";
-    private static final int VERSION_NUM = 4;
+    private static final int VERSION_NUM = 6;
 
 
     public static final String TABLE_NAME_PLAYER = "Table_Player";
@@ -50,7 +50,7 @@ public class DatabaseHelper extends SQLiteOpenHelper{
             db.execSQL(create_team_table);
             Log.i("DatabaseHelper", "Team Table Created");
 
-            String create_game_table = "CREATE TABLE " + TABLE_NAME_GAME +" ("+KEY_T_ID+ " INTEGER PRIMARY KEY AUTOINCREMENT, " + KEY_G_DATE +
+            String create_game_table = "CREATE TABLE " + TABLE_NAME_GAME +" ("+KEY_G_ID+ " INTEGER PRIMARY KEY AUTOINCREMENT, " + KEY_G_DATE +
                     " TEXT, "+KEY_G_LOCATION+" TEXT, "+KEY_G_TIME+" TEXT, "+KEY_G_T1+" TEXT, "+KEY_G_T2+" TEXT, "+KEY_G_T1_SCORE+" TEXT, "+
                     KEY_G_T2_SCORE+" TEXT, "+KEY_G_REF_ID+" TEXT)";
             db.execSQL(create_game_table);

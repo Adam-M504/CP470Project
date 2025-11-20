@@ -1,7 +1,6 @@
 // GameAdapter.java
 package com.example.unnamedapp;
 
-import android.content.Intent;
 import android.view.*;
 import android.widget.*;
 import androidx.recyclerview.widget.RecyclerView;
@@ -34,6 +33,8 @@ public class GameAdapter extends RecyclerView.Adapter<GameAdapter.ViewHolder> {
         return new ViewHolder(v);
     }
 
+
+
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
         Game g = games.get(position);
@@ -41,10 +42,14 @@ public class GameAdapter extends RecyclerView.Adapter<GameAdapter.ViewHolder> {
         holder.time.setText("Time: " + g.time);
         holder.location.setText("Location: " + g.location);
 
-        holder.signUp.setOnClickListener(v -> {
-            Toast.makeText(v.getContext(), "Signed up for " + g.name, Toast.LENGTH_SHORT).show();
+        holder.itemView.setOnClickListener(v -> {
+            Toast.makeText(v.getContext(), "DAWG" + g.name, Toast.LENGTH_SHORT).show();
             HomePage.CallGameInfo(g.name, v.getContext());
         });
+
+        holder.signUp.setOnClickListener(v ->
+                Toast.makeText(v.getContext(), "Signed up for " + g.name, Toast.LENGTH_SHORT).show()
+        );
     }
 
     @Override
