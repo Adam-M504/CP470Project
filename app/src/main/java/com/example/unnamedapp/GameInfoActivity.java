@@ -83,11 +83,10 @@ public class GameInfoActivity extends AppCompatActivity {
         PlayerAdapter adapterTeam2 = new PlayerAdapter(team2Players);
 
         recyclerTeam1.setAdapter(adapterTeam1);
-        //setRecyclerHeight(recyclerTeam1);
         recyclerTeam2.setAdapter(adapterTeam2);
-        //setRecyclerHeight(recyclerTeam2);
 
         SetDisplay(GameId);
+        db.close();
 
     }
 
@@ -165,24 +164,6 @@ public class GameInfoActivity extends AppCompatActivity {
 
 
 
-    }
-
-    public static void setRecyclerHeight(RecyclerView recyclerView) {
-        RecyclerView.Adapter adapter = recyclerView.getAdapter();
-        if (adapter == null) return;
-
-        int totalHeight = 0;
-        for (int i = 0; i < adapter.getItemCount(); i++) {
-            View listItem = adapter.createViewHolder(recyclerView, adapter.getItemViewType(i)).itemView;
-            listItem.measure(
-                    View.MeasureSpec.makeMeasureSpec(recyclerView.getWidth(), View.MeasureSpec.EXACTLY),
-                    View.MeasureSpec.makeMeasureSpec(0, View.MeasureSpec.UNSPECIFIED)
-            );
-            totalHeight += listItem.getMeasuredHeight();
-        }
-
-        recyclerView.getLayoutParams().height = totalHeight;
-        recyclerView.requestLayout();
     }
 
     public static void databaseentrycreator(SQLiteDatabase dbase){
