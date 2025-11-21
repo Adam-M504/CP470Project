@@ -14,8 +14,22 @@ public class DatabaseHelper extends SQLiteOpenHelper{
     public static final String TABLE_NAME_PLAYER = "Table_Player";
     public static final String KEY_P_ID = "id";
     public static final String KEY_P_NAME = "name";
+    public static final String KEY_P_FIRSTNAME = "firstname";
+    public static final String KEY_P_LASTNAME = "lastname";
+    private static final String KEY_P_PASSWORD = "password";
+    private static final String KEY_P_AGE = "age";
+    private static final String KEY_P_SKILL_LEVEL = "skill level";
     public static final String KEY_P_RANK = "rank";
     public static final String KEY_P_GEND = "gender";
+
+
+    public static final String TABLE_NAME_FRIENDS = "Friend_Table";
+    public static final String KEY_F_ID = "fid";
+    public static final String Key_F_ID_FRIEND_1 = "friend_1";
+    public static final String Key_F_ID_FRIEND_2 = "friend_2";
+
+    public static final String KEY_F_REQUEST_ACCEPTED = "friend_request";
+
 
     public static final String TABLE_NAME_TEAM = "Table_Team";
     public static final String KEY_T_ID = "id";
@@ -41,7 +55,8 @@ public class DatabaseHelper extends SQLiteOpenHelper{
         public void onCreate(SQLiteDatabase db){
             Log.i("DatabaseHelper", "Calling onCreate");
             String create_player_table = "CREATE TABLE " + TABLE_NAME_PLAYER +" ("+KEY_P_ID+ " INTEGER PRIMARY KEY AUTOINCREMENT, " + KEY_P_NAME +
-                    " TEXT, "+KEY_P_RANK+" TEXT, "+KEY_P_GEND+" TEXT)";
+                    " TEXT, "+KEY_P_RANK+" TEXT, "+KEY_P_GEND+" TEXT, "+KEY_P_FIRSTNAME+ " TEXT, " +KEY_P_LASTNAME+ " TEXT, " + KEY_P_AGE+ " TEXT, " +
+                     KEY_P_SKILL_LEVEL + " TEXT, "+KEY_P_PASSWORD+ " TEXT) ";
             db.execSQL(create_player_table);
             Log.i("DatabaseHelper", "Player Table Created");
 
@@ -54,6 +69,11 @@ public class DatabaseHelper extends SQLiteOpenHelper{
                     " TEXT, "+KEY_G_LOCATION+" TEXT, "+KEY_G_TIME+" TEXT, "+KEY_G_T1+" TEXT, "+KEY_G_T2+" TEXT, "+KEY_G_T1_SCORE+" TEXT, "+
                     KEY_G_T2_SCORE+" TEXT, "+KEY_G_REF_ID+" TEXT)";
             db.execSQL(create_game_table);
+
+            String create_friend_table = "CREATE TABLE " + TABLE_NAME_FRIENDS + " ("+KEY_F_ID+ " INTEGER PRIMARY KEY AUTOINCREMENT, "+
+                    Key_F_ID_FRIEND_1 + " TEXT, " + Key_F_ID_FRIEND_2 + " TEXT, " + KEY_F_REQUEST_ACCEPTED + " BOOLEAN)";
+            db.execSQL(create_friend_table);
+
             Log.i("DatabaseHelper", "Game Table Created");
 
 
