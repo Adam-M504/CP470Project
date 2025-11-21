@@ -23,7 +23,17 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Harmanpreet\\Documents\\GitHub\\CP470Project\\app\\src\\main\\res\\values-land\\dimens.xml",
+                    "source": "C:\\Users\\Harmanpreet\\.gradle\\caches\\8.13\\transforms\\54d3b7fe44ea74ca7e8ce3a3f5e360d2\\transformed\\appcompat-1.7.1\\res\\values-land\\values-land.xml",
+                    "from": {
+                        "startLines": "2,3,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,125,196",
+                        "endColumns": "69,70,67",
+                        "endOffsets": "120,191,259"
+                    }
+                },
+                {
+                    "source": "T:\\CP470Project\\app\\src\\main\\res\\values-land\\dimens.xml",
                     "from": {
                         "startLines": "1,2",
                         "startColumns": "4,4",
@@ -37,16 +47,6 @@
                         "startOffsets": "264,322",
                         "endColumns": "57,41",
                         "endOffsets": "317,359"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Harmanpreet\\.gradle\\caches\\8.13\\transforms\\54d3b7fe44ea74ca7e8ce3a3f5e360d2\\transformed\\appcompat-1.7.1\\res\\values-land\\values-land.xml",
-                    "from": {
-                        "startLines": "2,3,4",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "55,125,196",
-                        "endColumns": "69,70,67",
-                        "endOffsets": "120,191,259"
                     }
                 }
             ]

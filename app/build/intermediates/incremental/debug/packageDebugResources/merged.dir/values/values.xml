@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="backgroundLight">#FAFAFA</color>
+    <color name="backgroundMedium">#EEEEF3</color>
+    <color name="black">#FF000000</color>
+    <color name="ic_launcher_background">#FFFFFF</color>
+    <color name="primaryColor">#009961</color>
+    <color name="primaryText">#183059</color>
+    <color name="secondaryText">#666666</color>
+    <color name="white">#FFFFFFFF</color>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="app_name">Soccer Net</string>
+    <string name="create_account">Create an Account</string>
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="forgotPW">Forgot Password</string>
+    <string name="friend_name_placeholder">Friend Name</string>
+    <string name="friend_status_placeholder">Status</string>
+    <string name="friend_username_placeholder">/@username</string>
+    <string name="incorrect">Incorrect Username or Password</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="login">Login</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="login_name">Login Name</string>
+    <string name="next">Next</string>
+    <string name="password">Password</string>
+    <string name="previous">Previous</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="search_hint">Search friends...</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="welcome">"Welcome !"</string>
+    <style name="Base.Theme.UnnamedApp" parent="Theme.Material3.DayNight.NoActionBar">
+        
+        
+    </style>
+    <style name="Theme.UnnamedApp" parent="Base.Theme.UnnamedApp"/>
+</resources>

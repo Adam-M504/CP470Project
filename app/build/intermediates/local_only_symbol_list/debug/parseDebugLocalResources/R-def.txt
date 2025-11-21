@@ -16,6 +16,8 @@ drawable date_item_bg
 drawable edittext_outline_white
 drawable forgot_login_background
 drawable friend_icon
+drawable green_rounded_box
+drawable grey_white_gradient
 drawable history_icon
 drawable home_icon
 drawable home_page_background
