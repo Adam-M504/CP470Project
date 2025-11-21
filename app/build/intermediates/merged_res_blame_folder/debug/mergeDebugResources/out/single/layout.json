@@ -20,10 +20,6 @@
         "source": "/Users/adammoor/.gradle/daemon/8.13/com.example.unnamedapp-main-48:/layout/activity_forgot_password.xml"
     },
     {
-        "merged": "com.example.unnamedapp-mergeDebugResources-45:/layout/activity_home_page.xml",
-        "source": "com.example.unnamedapp-main-48:/layout/activity_home_page.xml"
-    },
-    {
         "merged": "/Users/adammoor/.gradle/daemon/8.13/com.example.unnamedapp-mergeDebugResources-45:/layout/activity_login.xml",
         "source": "/Users/adammoor/.gradle/daemon/8.13/com.example.unnamedapp-main-48:/layout/activity_login.xml"
     },
@@ -32,12 +28,16 @@
         "source": "/Users/adammoor/.gradle/daemon/8.13/com.example.unnamedapp-main-48:/layout/activity_friend_search.xml"
     },
     {
+        "merged": "/Users/adammoor/.gradle/daemon/8.13/com.example.unnamedapp-mergeDebugResources-45:/layout/activity_home_page.xml",
+        "source": "/Users/adammoor/.gradle/daemon/8.13/com.example.unnamedapp-main-48:/layout/activity_home_page.xml"
+    },
+    {
         "merged": "/Users/adammoor/.gradle/daemon/8.13/com.example.unnamedapp-mergeDebugResources-45:/layout/activity_create_account.xml",
         "source": "/Users/adammoor/.gradle/daemon/8.13/com.example.unnamedapp-main-48:/layout/activity_create_account.xml"
     },
     {
-        "merged": "/Users/adammoor/.gradle/daemon/8.13/com.example.unnamedapp-mergeDebugResources-45:/layout/activity_home_page.xml",
-        "source": "/Users/adammoor/.gradle/daemon/8.13/com.example.unnamedapp-main-48:/layout/activity_home_page.xml"
+        "merged": "com.example.unnamedapp-mergeDebugResources-45:/layout/activity_create_account.xml",
+        "source": "com.example.unnamedapp-main-48:/layout/activity_create_account.xml"
     },
     {
         "merged": "/Users/adammoor/.gradle/daemon/8.13/com.example.unnamedapp-mergeDebugResources-45:/layout/item_game.xml",
