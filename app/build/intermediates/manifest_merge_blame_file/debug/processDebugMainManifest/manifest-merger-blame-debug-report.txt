@@ -20,81 +20,81 @@
 15-->[androidx.core:core:1.13.1] C:\Users\Harmanpreet\.gradle\caches\8.13\transforms\79250034c8c8e3a259b90a375f62db46\transformed\core-1.13.1\AndroidManifest.xml:26:22-94
 16
 17    <application
-17-->T:\CP470Project\app\src\main\AndroidManifest.xml:5:5-41:19
+17-->C:\Users\Harmanpreet\Documents\GitHub\CP470Project\app\src\main\AndroidManifest.xml:5:5-41:19
 18        android:allowBackup="true"
-18-->T:\CP470Project\app\src\main\AndroidManifest.xml:6:9-35
+18-->C:\Users\Harmanpreet\Documents\GitHub\CP470Project\app\src\main\AndroidManifest.xml:6:9-35
 19        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 19-->[androidx.core:core:1.13.1] C:\Users\Harmanpreet\.gradle\caches\8.13\transforms\79250034c8c8e3a259b90a375f62db46\transformed\core-1.13.1\AndroidManifest.xml:28:18-86
 20        android:dataExtractionRules="@xml/data_extraction_rules"
-20-->T:\CP470Project\app\src\main\AndroidManifest.xml:7:9-65
+20-->C:\Users\Harmanpreet\Documents\GitHub\CP470Project\app\src\main\AndroidManifest.xml:7:9-65
 21        android:debuggable="true"
 22        android:extractNativeLibs="false"
 23        android:fullBackupContent="@xml/backup_rules"
-23-->T:\CP470Project\app\src\main\AndroidManifest.xml:8:9-54
+23-->C:\Users\Harmanpreet\Documents\GitHub\CP470Project\app\src\main\AndroidManifest.xml:8:9-54
 24        android:icon="@mipmap/ic_launcher"
-24-->T:\CP470Project\app\src\main\AndroidManifest.xml:9:9-43
+24-->C:\Users\Harmanpreet\Documents\GitHub\CP470Project\app\src\main\AndroidManifest.xml:9:9-43
 25        android:label="@string/app_name"
-25-->T:\CP470Project\app\src\main\AndroidManifest.xml:10:9-41
+25-->C:\Users\Harmanpreet\Documents\GitHub\CP470Project\app\src\main\AndroidManifest.xml:10:9-41
 26        android:roundIcon="@mipmap/ic_launcher_round"
-26-->T:\CP470Project\app\src\main\AndroidManifest.xml:11:9-54
+26-->C:\Users\Harmanpreet\Documents\GitHub\CP470Project\app\src\main\AndroidManifest.xml:11:9-54
 27        android:supportsRtl="true"
-27-->T:\CP470Project\app\src\main\AndroidManifest.xml:12:9-35
+27-->C:\Users\Harmanpreet\Documents\GitHub\CP470Project\app\src\main\AndroidManifest.xml:12:9-35
 28        android:testOnly="true"
 29        android:theme="@style/Theme.UnnamedApp" >
-29-->T:\CP470Project\app\src\main\AndroidManifest.xml:13:9-48
+29-->C:\Users\Harmanpreet\Documents\GitHub\CP470Project\app\src\main\AndroidManifest.xml:13:9-48
 30        <activity
-30-->T:\CP470Project\app\src\main\AndroidManifest.xml:14:9-16:40
+30-->C:\Users\Harmanpreet\Documents\GitHub\CP470Project\app\src\main\AndroidManifest.xml:14:9-16:40
 31            android:name="com.example.unnamedapp.GameInfoActivity"
-31-->T:\CP470Project\app\src\main\AndroidManifest.xml:15:13-45
+31-->C:\Users\Harmanpreet\Documents\GitHub\CP470Project\app\src\main\AndroidManifest.xml:15:13-45
 32            android:exported="false" />
-32-->T:\CP470Project\app\src\main\AndroidManifest.xml:16:13-37
+32-->C:\Users\Harmanpreet\Documents\GitHub\CP470Project\app\src\main\AndroidManifest.xml:16:13-37
 33        <activity
-33-->T:\CP470Project\app\src\main\AndroidManifest.xml:17:9-19:40
+33-->C:\Users\Harmanpreet\Documents\GitHub\CP470Project\app\src\main\AndroidManifest.xml:17:9-19:40
 34            android:name="com.example.unnamedapp.CreateAccountActivity"
-34-->T:\CP470Project\app\src\main\AndroidManifest.xml:18:13-50
+34-->C:\Users\Harmanpreet\Documents\GitHub\CP470Project\app\src\main\AndroidManifest.xml:18:13-50
 35            android:exported="false" />
-35-->T:\CP470Project\app\src\main\AndroidManifest.xml:19:13-37
+35-->C:\Users\Harmanpreet\Documents\GitHub\CP470Project\app\src\main\AndroidManifest.xml:19:13-37
 36        <activity
-36-->T:\CP470Project\app\src\main\AndroidManifest.xml:20:9-22:40
+36-->C:\Users\Harmanpreet\Documents\GitHub\CP470Project\app\src\main\AndroidManifest.xml:20:9-22:40
 37            android:name="com.example.unnamedapp.ForgotPasswordActivity"
-37-->T:\CP470Project\app\src\main\AndroidManifest.xml:21:13-51
+37-->C:\Users\Harmanpreet\Documents\GitHub\CP470Project\app\src\main\AndroidManifest.xml:21:13-51
 38            android:exported="false" /> <!-- Your existing activities -->
-38-->T:\CP470Project\app\src\main\AndroidManifest.xml:22:13-37
+38-->C:\Users\Harmanpreet\Documents\GitHub\CP470Project\app\src\main\AndroidManifest.xml:22:13-37
 39        <activity
-39-->T:\CP470Project\app\src\main\AndroidManifest.xml:23:9-25:39
+39-->C:\Users\Harmanpreet\Documents\GitHub\CP470Project\app\src\main\AndroidManifest.xml:23:9-25:39
 40            android:name="com.example.unnamedapp.HomePage"
-40-->T:\CP470Project\app\src\main\AndroidManifest.xml:24:13-37
+40-->C:\Users\Harmanpreet\Documents\GitHub\CP470Project\app\src\main\AndroidManifest.xml:24:13-37
 41            android:exported="true" />
-41-->T:\CP470Project\app\src\main\AndroidManifest.xml:25:13-36
+41-->C:\Users\Harmanpreet\Documents\GitHub\CP470Project\app\src\main\AndroidManifest.xml:25:13-36
 42        <activity
-42-->T:\CP470Project\app\src\main\AndroidManifest.xml:26:9-34:20
+42-->C:\Users\Harmanpreet\Documents\GitHub\CP470Project\app\src\main\AndroidManifest.xml:26:9-34:20
 43            android:name="com.example.unnamedapp.LoginActivity"
-43-->T:\CP470Project\app\src\main\AndroidManifest.xml:27:13-42
+43-->C:\Users\Harmanpreet\Documents\GitHub\CP470Project\app\src\main\AndroidManifest.xml:27:13-42
 44            android:exported="true" >
-44-->T:\CP470Project\app\src\main\AndroidManifest.xml:28:13-36
+44-->C:\Users\Harmanpreet\Documents\GitHub\CP470Project\app\src\main\AndroidManifest.xml:28:13-36
 45            <intent-filter>
-45-->T:\CP470Project\app\src\main\AndroidManifest.xml:29:13-33:29
+45-->C:\Users\Harmanpreet\Documents\GitHub\CP470Project\app\src\main\AndroidManifest.xml:29:13-33:29
 46                <action android:name="android.intent.action.MAIN" />
-46-->T:\CP470Project\app\src\main\AndroidManifest.xml:30:17-69
-46-->T:\CP470Project\app\src\main\AndroidManifest.xml:30:25-66
+46-->C:\Users\Harmanpreet\Documents\GitHub\CP470Project\app\src\main\AndroidManifest.xml:30:17-69
+46-->C:\Users\Harmanpreet\Documents\GitHub\CP470Project\app\src\main\AndroidManifest.xml:30:25-66
 47
 48                <category android:name="android.intent.category.LAUNCHER" />
-48-->T:\CP470Project\app\src\main\AndroidManifest.xml:32:17-77
-48-->T:\CP470Project\app\src\main\AndroidManifest.xml:32:27-74
+48-->C:\Users\Harmanpreet\Documents\GitHub\CP470Project\app\src\main\AndroidManifest.xml:32:17-77
+48-->C:\Users\Harmanpreet\Documents\GitHub\CP470Project\app\src\main\AndroidManifest.xml:32:27-74
 49            </intent-filter>
 50        </activity> <!-- ADD THESE TWO LINES BELOW -->
 51        <activity
-51-->T:\CP470Project\app\src\main\AndroidManifest.xml:35:9-37:40
+51-->C:\Users\Harmanpreet\Documents\GitHub\CP470Project\app\src\main\AndroidManifest.xml:35:9-37:40
 52            android:name="com.example.unnamedapp.FriendSearchActivity"
-52-->T:\CP470Project\app\src\main\AndroidManifest.xml:36:13-49
+52-->C:\Users\Harmanpreet\Documents\GitHub\CP470Project\app\src\main\AndroidManifest.xml:36:13-49
 53            android:exported="false" />
-53-->T:\CP470Project\app\src\main\AndroidManifest.xml:37:13-37
+53-->C:\Users\Harmanpreet\Documents\GitHub\CP470Project\app\src\main\AndroidManifest.xml:37:13-37
 54        <activity
-54-->T:\CP470Project\app\src\main\AndroidManifest.xml:38:9-40:40
+54-->C:\Users\Harmanpreet\Documents\GitHub\CP470Project\app\src\main\AndroidManifest.xml:38:9-40:40
 55            android:name="com.example.unnamedapp.FriendPageActivity"
-55-->T:\CP470Project\app\src\main\AndroidManifest.xml:39:13-47
+55-->C:\Users\Harmanpreet\Documents\GitHub\CP470Project\app\src\main\AndroidManifest.xml:39:13-47
 56            android:exported="false" />
-56-->T:\CP470Project\app\src\main\AndroidManifest.xml:40:13-37
+56-->C:\Users\Harmanpreet\Documents\GitHub\CP470Project\app\src\main\AndroidManifest.xml:40:13-37
 57
 58        <provider
 58-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Harmanpreet\.gradle\caches\8.13\transforms\7724c351bccecbaac528f90a4de1b4f5\transformed\emoji2-1.3.0\AndroidManifest.xml:24:9-32:20

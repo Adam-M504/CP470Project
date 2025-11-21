@@ -4,7 +4,9 @@ package com.example.unnamedapp.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.LinearLayout;
+import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.ScrollView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -17,10 +19,22 @@ import java.lang.String;
 
 public final class ActivityFriendPageBinding implements ViewBinding {
   @NonNull
-  private final LinearLayout rootView;
+  private final ScrollView rootView;
+
+  @NonNull
+  public final Button backButton;
+
+  @NonNull
+  public final TextView friendGamesPlayed;
+
+  @NonNull
+  public final TextView friendLosses;
 
   @NonNull
   public final TextView friendPageName;
+
+  @NonNull
+  public final TextView friendPageRank;
 
   @NonNull
   public final TextView friendPageStatus;
@@ -28,18 +42,37 @@ public final class ActivityFriendPageBinding implements ViewBinding {
   @NonNull
   public final TextView friendPageUsername;
 
-  private ActivityFriendPageBinding(@NonNull LinearLayout rootView,
-      @NonNull TextView friendPageName, @NonNull TextView friendPageStatus,
-      @NonNull TextView friendPageUsername) {
+  @NonNull
+  public final ImageView friendRankBadge;
+
+  @NonNull
+  public final TextView friendWins;
+
+  @NonNull
+  public final Button sendFriendRequestBtn;
+
+  private ActivityFriendPageBinding(@NonNull ScrollView rootView, @NonNull Button backButton,
+      @NonNull TextView friendGamesPlayed, @NonNull TextView friendLosses,
+      @NonNull TextView friendPageName, @NonNull TextView friendPageRank,
+      @NonNull TextView friendPageStatus, @NonNull TextView friendPageUsername,
+      @NonNull ImageView friendRankBadge, @NonNull TextView friendWins,
+      @NonNull Button sendFriendRequestBtn) {
     this.rootView = rootView;
+    this.backButton = backButton;
+    this.friendGamesPlayed = friendGamesPlayed;
+    this.friendLosses = friendLosses;
     this.friendPageName = friendPageName;
+    this.friendPageRank = friendPageRank;
     this.friendPageStatus = friendPageStatus;
     this.friendPageUsername = friendPageUsername;
+    this.friendRankBadge = friendRankBadge;
+    this.friendWins = friendWins;
+    this.sendFriendRequestBtn = sendFriendRequestBtn;
   }
 
   @Override
   @NonNull
-  public LinearLayout getRoot() {
+  public ScrollView getRoot() {
     return rootView;
   }
 
@@ -64,9 +97,33 @@ public final class ActivityFriendPageBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.back_button;
+      Button backButton = ViewBindings.findChildViewById(rootView, id);
+      if (backButton == null) {
+        break missingId;
+      }
+
+      id = R.id.friend_games_played;
+      TextView friendGamesPlayed = ViewBindings.findChildViewById(rootView, id);
+      if (friendGamesPlayed == null) {
+        break missingId;
+      }
+
+      id = R.id.friend_losses;
+      TextView friendLosses = ViewBindings.findChildViewById(rootView, id);
+      if (friendLosses == null) {
+        break missingId;
+      }
+
       id = R.id.friend_page_name;
       TextView friendPageName = ViewBindings.findChildViewById(rootView, id);
       if (friendPageName == null) {
+        break missingId;
+      }
+
+      id = R.id.friend_page_rank;
+      TextView friendPageRank = ViewBindings.findChildViewById(rootView, id);
+      if (friendPageRank == null) {
         break missingId;
       }
 
@@ -82,8 +139,27 @@ public final class ActivityFriendPageBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityFriendPageBinding((LinearLayout) rootView, friendPageName,
-          friendPageStatus, friendPageUsername);
+      id = R.id.friend_rank_badge;
+      ImageView friendRankBadge = ViewBindings.findChildViewById(rootView, id);
+      if (friendRankBadge == null) {
+        break missingId;
+      }
+
+      id = R.id.friend_wins;
+      TextView friendWins = ViewBindings.findChildViewById(rootView, id);
+      if (friendWins == null) {
+        break missingId;
+      }
+
+      id = R.id.send_friend_request_btn;
+      Button sendFriendRequestBtn = ViewBindings.findChildViewById(rootView, id);
+      if (sendFriendRequestBtn == null) {
+        break missingId;
+      }
+
+      return new ActivityFriendPageBinding((ScrollView) rootView, backButton, friendGamesPlayed,
+          friendLosses, friendPageName, friendPageRank, friendPageStatus, friendPageUsername,
+          friendRankBadge, friendWins, sendFriendRequestBtn);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

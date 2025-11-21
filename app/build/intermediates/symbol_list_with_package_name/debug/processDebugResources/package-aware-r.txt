@@ -3714,6 +3714,12 @@ drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable person_icon
+drawable rank_ball_master
+drawable rank_barefoot
+drawable rank_dirty_sneaker
+drawable rank_footy_fanatic
+drawable rank_grand_ball_master
+drawable rank_kinda_mid
 drawable test_level_drawable
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
@@ -3820,6 +3826,7 @@ id autoHide
 id autoLimit
 id availableSpace
 id axisRelative
+id back_button
 id barrier
 id baseline
 id beginOnFirstDraw
@@ -3957,12 +3964,17 @@ id forgot_pw_button
 id forgot_pw_layout
 id forgot_pw_title
 id fragment_container_view_tag
+id friend_games_played
+id friend_losses
 id friend_name
 id friend_page_name
+id friend_page_rank
 id friend_page_status
 id friend_page_username
+id friend_rank_badge
 id friend_status
 id friend_username
+id friend_wins
 id frost
 id fullscreen_header
 id gameDetailsLayout
@@ -4201,6 +4213,7 @@ id search_voice_btn
 id select_dialog_listview
 id selected
 id selection_type
+id send_friend_request_btn
 id sharedValueSet
 id sharedValueUnset
 id shortcut

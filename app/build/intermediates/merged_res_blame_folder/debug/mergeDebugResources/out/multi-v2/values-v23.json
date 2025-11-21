@@ -42,14 +42,14 @@
                     }
                 },
                 {
-                    "source": "T:\\CP470Project\\app\\src\\main\\res\\values-v23\\themes.xml",
+                    "source": "C:\\Users\\Harmanpreet\\Documents\\GitHub\\CP470Project\\app\\src\\main\\res\\values-v23\\themes.xml",
                     "from": {
                         "startLines": "1",
                         "startColumns": "2",
-                        "startOffsets": "61",
+                        "startOffsets": "62",
                         "endLines": "6",
                         "endColumns": "10",
-                        "endOffsets": "413"
+                        "endOffsets": "419"
                     },
                     "to": {
                         "startLines": "53",

@@ -23,6 +23,12 @@ drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable login_background
 drawable person_icon
+drawable rank_ball_master
+drawable rank_barefoot
+drawable rank_dirty_sneaker
+drawable rank_footy_fanatic
+drawable rank_grand_ball_master
+drawable rank_kinda_mid
 drawable trophy_icon
 id FirstFragment
 id SecondFragment
@@ -32,6 +38,7 @@ id action_FirstFragment_to_SecondFragment
 id action_SecondFragment_to_FirstFragment
 id age_input
 id age_label
+id back_button
 id bottomNav
 id btnSignUp
 id confirm_password_input
@@ -56,12 +63,17 @@ id first_name_label
 id forgot_pw_button
 id forgot_pw_layout
 id forgot_pw_title
+id friend_games_played
+id friend_losses
 id friend_name
 id friend_page_name
+id friend_page_rank
 id friend_page_status
 id friend_page_username
+id friend_rank_badge
 id friend_status
 id friend_username
+id friend_wins
 id gameDetailsLayout
 id gameLocation
 id gameName
@@ -96,6 +108,7 @@ id recyclerTeam1
 id recyclerTeam2
 id recycler_view
 id search_bar
+id send_friend_request_btn
 id skill_advanced
 id skill_beginner
 id skill_casual
