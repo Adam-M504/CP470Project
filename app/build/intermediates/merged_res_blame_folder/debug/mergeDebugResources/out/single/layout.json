@@ -1,7 +1,7 @@
 [
     {
-        "merged": "com.example.unnamedapp-mergeDebugResources-45:/layout/activity_friend_page.xml",
-        "source": "com.example.unnamedapp-main-48:/layout/activity_friend_page.xml"
+        "merged": "com.example.unnamedapp-mergeDebugResources-45:/layout/activity_history_page.xml",
+        "source": "com.example.unnamedapp-main-48:/layout/activity_history_page.xml"
     },
     {
         "merged": "C:\\Users\\Harmanpreet\\.gradle\\daemon\\8.13\\com.example.unnamedapp-mergeDebugResources-45:\\layout\\activity_forgot_password.xml",
@@ -54,5 +54,9 @@
     {
         "merged": "C:\\Users\\Harmanpreet\\.gradle\\daemon\\8.13\\com.example.unnamedapp-mergeDebugResources-45:\\layout\\activity_game_info.xml",
         "source": "C:\\Users\\Harmanpreet\\.gradle\\daemon\\8.13\\com.example.unnamedapp-main-48:\\layout\\activity_game_info.xml"
+    },
+    {
+        "merged": "com.example.unnamedapp-mergeDebugResources-45:/layout/item_history_game.xml",
+        "source": "com.example.unnamedapp-main-48:/layout/item_history_game.xml"
     }
 ]

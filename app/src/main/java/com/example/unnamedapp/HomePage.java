@@ -33,6 +33,7 @@ public class HomePage extends AppCompatActivity {
     SQLiteDatabase db;
     ImageButton Trophy_button;
     ImageButton Friend_button;
+    ImageButton History_button;
 
     LocalDate todays_date = LocalDate.now();
 
@@ -100,6 +101,16 @@ public class HomePage extends AppCompatActivity {
             public void onClick(View v) {
                 Log.i("HomePage", "Friend Page selected");
                 Intent intent = new Intent(HomePage.this, FriendSearchActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        History_button = findViewById(R.id.navGames);
+        History_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.i("HomePage", "History Page selected");
+                Intent intent = new Intent(HomePage.this, HistoryPage.class);
                 startActivity(intent);
             }
         });

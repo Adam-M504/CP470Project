@@ -79,6 +79,10 @@ id gameLocation
 id gameName
 id gameRecyclerView
 id gameTime
+id historyGameDate
+id historyGameLocation
+id historyGameName
+id historyGameTime
 id homeTitle
 id last_name_input
 id last_name_label
@@ -104,6 +108,7 @@ id playerRank
 id players_needed_input
 id players_needed_label
 id profileIcon
+id recyclerHistory
 id recyclerTeam1
 id recyclerTeam2
 id recycler_view
@@ -131,6 +136,7 @@ layout activity_forgot_password
 layout activity_friend_page
 layout activity_friend_search
 layout activity_game_info
+layout activity_history_page
 layout activity_home_page
 layout activity_login
 layout activity_main
@@ -138,6 +144,7 @@ layout create_game_page
 layout item_date
 layout item_friend_search
 layout item_game
+layout item_history_game
 layout item_player
 mipmap ic_launcher
 mipmap ic_launcher_foreground

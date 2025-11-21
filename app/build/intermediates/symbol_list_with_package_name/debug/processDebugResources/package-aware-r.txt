@@ -3994,6 +3994,10 @@ id header_title
 id hidden
 id hide_ime_id
 id hideable
+id historyGameDate
+id historyGameLocation
+id historyGameName
+id historyGameTime
 id home
 id homeAsUp
 id homeTitle
@@ -4177,6 +4181,7 @@ id progress_horizontal
 id radio
 id ratio
 id rectangles
+id recyclerHistory
 id recyclerTeam1
 id recyclerTeam2
 id recycler_view
@@ -4470,6 +4475,7 @@ layout activity_forgot_password
 layout activity_friend_page
 layout activity_friend_search
 layout activity_game_info
+layout activity_history_page
 layout activity_home_page
 layout activity_login
 layout activity_main
@@ -4495,6 +4501,7 @@ layout ime_secondary_split_test_activity
 layout item_date
 layout item_friend_search
 layout item_game
+layout item_history_game
 layout item_player
 layout m3_alert_dialog
 layout m3_alert_dialog_actions

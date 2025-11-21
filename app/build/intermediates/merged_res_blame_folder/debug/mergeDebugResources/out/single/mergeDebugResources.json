@@ -16,6 +16,10 @@
         "source": "C:\\Users\\Harmanpreet\\.gradle\\daemon\\8.13\\com.example.unnamedapp-main-48:\\drawable\\history_icon.png"
     },
     {
+        "merged": "com.example.unnamedapp-debug-46:/layout_item_history_game.xml.flat",
+        "source": "com.example.unnamedapp-main-48:/layout/item_history_game.xml"
+    },
+    {
         "merged": "C:\\Users\\Harmanpreet\\.gradle\\daemon\\8.13\\com.example.unnamedapp-debug-46:\\layout_activity_create_account.xml.flat",
         "source": "C:\\Users\\Harmanpreet\\.gradle\\daemon\\8.13\\com.example.unnamedapp-main-48:\\layout\\activity_create_account.xml"
     },
@@ -66,6 +70,10 @@
     {
         "merged": "C:\\Users\\Harmanpreet\\.gradle\\daemon\\8.13\\com.example.unnamedapp-debug-46:\\drawable_ic_launcher_foreground.xml.flat",
         "source": "C:\\Users\\Harmanpreet\\.gradle\\daemon\\8.13\\com.example.unnamedapp-main-48:\\drawable\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "com.example.unnamedapp-debug-46:/layout_activity_history_page.xml.flat",
+        "source": "com.example.unnamedapp-main-48:/layout/activity_history_page.xml"
     },
     {
         "merged": "C:\\Users\\Harmanpreet\\.gradle\\daemon\\8.13\\com.example.unnamedapp-debug-46:\\mipmap-mdpi_ic_launcher_round.webp.flat",
@@ -202,9 +210,5 @@
     {
         "merged": "C:\\Users\\Harmanpreet\\.gradle\\daemon\\8.13\\com.example.unnamedapp-debug-46:\\layout_activity_home_page.xml.flat",
         "source": "C:\\Users\\Harmanpreet\\.gradle\\daemon\\8.13\\com.example.unnamedapp-main-48:\\layout\\activity_home_page.xml"
-    },
-    {
-        "merged": "com.example.unnamedapp-debug-46:/layout_activity_friend_page.xml.flat",
-        "source": "com.example.unnamedapp-main-48:/layout/activity_friend_page.xml"
     }
 ]

@@ -28,6 +28,9 @@
         android:testOnly="true"
         android:theme="@style/Theme.UnnamedApp" >
         <activity
+            android:name="com.example.unnamedapp.HistoryPage"
+            android:exported="false" />
+        <activity
             android:name="com.example.unnamedapp.GameInfoActivity"
             android:exported="false" />
         <activity

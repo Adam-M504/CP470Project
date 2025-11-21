@@ -21,13 +21,14 @@ public class DatabaseHelper extends SQLiteOpenHelper{
     private static final String KEY_P_SKILL_LEVEL = "skill level";
     public static final String KEY_P_RANK = "rank";
     public static final String KEY_P_GEND = "gender";
+    public static final String KEY_P_GAMES_PLAYED = "games_played";
+    public static final String KEY_P_GAMES_WON = "games_won";
 
 
     public static final String TABLE_NAME_FRIENDS = "Friend_Table";
     public static final String KEY_F_ID = "fid";
     public static final String Key_F_ID_FRIEND_1 = "friend_1";
     public static final String Key_F_ID_FRIEND_2 = "friend_2";
-
     public static final String KEY_F_REQUEST_ACCEPTED = "friend_request";
 
 
@@ -56,7 +57,7 @@ public class DatabaseHelper extends SQLiteOpenHelper{
             Log.i("DatabaseHelper", "Calling onCreate");
             String create_player_table = "CREATE TABLE " + TABLE_NAME_PLAYER +" ("+KEY_P_ID+ " INTEGER PRIMARY KEY AUTOINCREMENT, " + KEY_P_NAME +
                     " TEXT, "+KEY_P_RANK+" TEXT, "+KEY_P_GEND+" TEXT, "+KEY_P_FIRSTNAME+ " TEXT, " +KEY_P_LASTNAME+ " TEXT, " + KEY_P_AGE+ " TEXT, " +
-                     KEY_P_SKILL_LEVEL + " TEXT, "+KEY_P_PASSWORD+ " TEXT) ";
+                     KEY_P_SKILL_LEVEL + " TEXT, "+KEY_P_PASSWORD+ " TEXT " + KEY_P_GAMES_PLAYED + " INTEGER, " + KEY_P_GAMES_WON + " INTEGER) ";
             db.execSQL(create_player_table);
             Log.i("DatabaseHelper", "Player Table Created");
 
