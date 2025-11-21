@@ -31,6 +31,7 @@ public class HomePage extends AppCompatActivity {
     DatabaseHelper myhelper;
     SQLiteDatabase db;
     ImageButton Trophy_button;
+    ImageButton Friend_button;
 
     LocalDate todays_date = LocalDate.now();
 
@@ -86,6 +87,17 @@ public class HomePage extends AppCompatActivity {
             }
         });
 
+        Friend_button = findViewById(R.id.navFriends);
+        Friend_button.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Log.i("HomePage", "Friend Page selected");
+                Intent intent = new Intent(HomePage.this, FriendSearchActivity.class);
+                startActivity(intent);
+            }
+        });
+
+// test
         CreateGameList();
 
     }

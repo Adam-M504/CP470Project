@@ -12,17 +12,29 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.UnnamedApp">
         <activity
-            android:name=".MainActivity"
+            android:name=".CreateAccountActivity"
             android:exported="false" />
         <activity
+            android:name=".ForgotPasswordActivity"
+            android:exported="false" /> <!-- Your existing activities -->
+        <activity
             android:name=".HomePage"
+            android:exported="true" />
+        <activity
+            android:name=".LoginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
+        </activity> <!-- ADD THESE TWO LINES BELOW -->
+        <activity
+            android:name=".FriendSearchActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FriendPageActivity"
+            android:exported="false" />
     </application>
 
 </manifest>

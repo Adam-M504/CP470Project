@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/forgot_login_background">
+
+    <!-- DARKEN OVERLAY -->
+    <View
+        android:id="@+id/darken_overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#AA000000" />
+
+    <!-- MAIN CONTENT -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/account_creation_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp"
+            android:gravity="center_horizontal">
+
+            <!-- Page Title -->
+            <TextView
+                android:id="@+id/account_creation_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/create_your_account"
+                android:textSize="32sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/holo_green_light"
+                android:layout_marginBottom="32dp" />
+
+            <!-- First Name -->
+            <TextView
+                android:id="@+id/first_name_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/first_name"
+                android:textColor="@android:color/holo_green_light"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_marginBottom="4dp" />
+
+            <EditText
+                android:id="@+id/first_name_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/enter_fname"
+                android:background="@drawable/edittext_outline_white"
+                android:textColor="@android:color/white"
+                android:textColorHint="#80999999"
+                android:textSize="16sp"
+                android:layout_marginBottom="12dp" />
+
+            <!-- Last Name -->
+            <TextView
+                android:id="@+id/last_name_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/last_name"
+                android:textColor="@android:color/holo_green_light"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_marginBottom="4dp" />
+
+            <EditText
+                android:id="@+id/last_name_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/enter_lname"
+                android:background="@drawable/edittext_outline_white"
+                android:textColor="@android:color/white"
+                android:textColorHint="#80999999"
+                android:textSize="16sp"
+                android:layout_marginBottom="12dp" />
+
+            <!-- Age -->
+            <TextView
+                android:id="@+id/age_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/age"
+                android:textColor="@android:color/holo_green_light"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_marginBottom="4dp" />
+
+            <EditText
+                android:id="@+id/age_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/enter_age"
+                android:inputType="number"
+                android:background="@drawable/edittext_outline_white"
+                android:textColor="@android:color/white"
+                android:textColorHint="#80999999"
+                android:textSize="16sp"
+                android:layout_marginBottom="12dp" />
+
+            <!-- Username -->
+            <TextView
+                android:id="@+id/username_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/username"
+                android:textColor="@android:color/holo_green_light"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_marginBottom="4dp" />
+
+            <EditText
+                android:id="@+id/username_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/choose_username"
+                android:background="@drawable/edittext_outline_white"
+                android:textColor="@android:color/white"
+                android:textColorHint="#80999999"
+                android:textSize="16sp"
+                android:layout_marginBottom="12dp" />
+
+            <!-- Password -->
+            <TextView
+                android:id="@+id/password_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/password"
+                android:textColor="@android:color/holo_green_light"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_marginBottom="4dp" />
+
+            <EditText
+                android:id="@+id/password_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/create_password"
+                android:inputType="textPassword"
+                android:background="@drawable/edittext_outline_white"
+                android:textColor="@android:color/white"
+                android:textColorHint="#80999999"
+                android:textSize="16sp"
+                android:layout_marginBottom="12dp" />
+
+            <!-- Confirm Password -->
+            <TextView
+                android:id="@+id/confirm_password_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/confirm_password"
+                android:textColor="@android:color/holo_green_light"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_marginBottom="4dp" />
+
+            <EditText
+                android:id="@+id/confirm_password_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/re_enter_password"
+                android:inputType="textPassword"
+                android:background="@drawable/edittext_outline_white"
+                android:textColor="@android:color/white"
+                android:textColorHint="#80999999"
+                android:textSize="16sp"
+                android:layout_marginBottom="20dp" />
+
+            <!-- Skill Level -->
+            <TextView
+                android:id="@+id/skill_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/skill_level"
+                android:textColor="@android:color/holo_green_light"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_marginBottom="8dp" />
+
+            <RadioGroup
+                android:id="@+id/skill_level_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:buttonTint="@android:color/holo_green_light"
+                android:layout_marginBottom="24dp">
+
+                <RadioButton
+                    android:id="@+id/skill_beginner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/beginner"
+                    android:textColor="@android:color/holo_green_light"
+                    app:buttonTint="@android:color/holo_green_light"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:id="@+id/skill_casual"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/casual"
+                    android:textColor="@android:color/holo_green_light"
+                    app:buttonTint="@android:color/holo_green_light"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:id="@+id/skill_intermediate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/intermediate"
+                    android:textColor="@android:color/holo_green_light"
+                    app:buttonTint="@android:color/holo_green_light"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:id="@+id/skill_advanced"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/advanced"
+                    android:textColor="@android:color/holo_green_light"
+                    app:buttonTint="@android:color/holo_green_light"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:id="@+id/skill_pro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pro"
+                    android:textColor="@android:color/holo_green_light"
+                    app:buttonTint="@android:color/holo_green_light"
+                    android:textSize="16sp" />
+            </RadioGroup>
+
+            <!-- Create Account Button -->
+            <Button
+                android:id="@+id/create_account_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/create_your_account"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                app:backgroundTint="@android:color/holo_green_light"
+                app:cornerRadius="24dp"
+                android:padding="14dp"
+                android:layout_marginBottom="16dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>
