@@ -60,7 +60,7 @@ public class GameInfoActivity extends AppCompatActivity {
         String team1id = team_ids.get(0);
         String team2id = team_ids.get(1);
 
-        //databaseentrycreator(db);
+        databaseentrycreator(db);
 
         // Setup RecyclerViews for both teams
         RecyclerView recyclerTeam1 = findViewById(R.id.recyclerTeam1);

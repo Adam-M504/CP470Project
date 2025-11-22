@@ -1,6 +1,0 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:background="#F5F5F5" android:padding="12dp" android:layout_marginBottom="8dp" android:elevation="3dp">
-    <TextView android:id="@+id/historyGameName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Game Name" android:textSize="18sp" android:textStyle="bold" android:paddingBottom="4dp"/>
-    <TextView android:id="@+id/historyGameTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Time: 7:00 PM" android:textSize="16sp" android:paddingBottom="2dp"/>
-    <TextView android:id="@+id/historyGameLocation" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Location: Stadium A" android:textSize="16sp" android:paddingBottom="2dp"/>
-    <TextView android:id="@+id/historyGameDate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Date: 2025-11-20" android:textSize="16sp"/>
-</LinearLayout>
